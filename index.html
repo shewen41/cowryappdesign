@@ -1,0 +1,247 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>MyCowry App</title>
+		<link rel="stylesheet" href="font-awesome/css/all.min.css"/>
+		
+		<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+		
+		
+		
+		  <!-- Font Awesome -->
+		  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"> -->
+		  <!-- Bootstrap core CSS -->
+		<link href="mdb/css/bootstrap.min.css" rel="stylesheet">
+		  <!-- Material Design Bootstrap -->
+		<link href="mdb/css/mdb.min.css" rel="stylesheet">
+		  <!-- Your custom styles (optional) -->
+		<link rel="stylesheet" href="css/style.css">
+		  
+	</head>
+
+	<body>
+		
+		<header>
+		  <!-- Navbar -->
+			<nav class="navbar navbar-expand-lg fixed-top scrolling-navbar py-0">
+				<div class="container">
+					<a class="navbar-brand text-success" href="#">
+						<strong>MyCowryApp</strong>
+				    </a>
+				    <button class="navbar-toggler" style="" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon fas fa-bars></i>"></span>
+				    </button>
+				    <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+						<form class="form-inline my-0 ml-5">
+							<div class="md-form my-0">
+								<input class="form-control mr-sm-2" type="text" placeholder="Search for beneficiary" aria-label="Search">
+								<i class="fas fa-search searchbtn"></i>
+							</div>
+						</form>
+					
+						<ul class="navbar-nav ml-auto py-0 my-0">
+							<li class="nav-item mr-2">
+								<button type="button" class="d-flex btn btn-success btn-sm btn-sm btn-rounded" data-toggle="modal" data-target="#signUpModal">
+									<a  class= href="register.html"><i class="fas fa-user pr-2"></i><strong>SignUp</strong></a>
+								</button>
+							</li>
+
+							<!-- Login Modal Button -->
+							<li class="nav-item ml-2">
+								<button  class="d-flex btn btn-success btn-sm btn-rounded" type="button" data-toggle="modal" data-target="#loginModal">
+									<a class= href="#"><i class="fas fa-user pr-2"><strong></i>Login</strong></a>
+								</button>
+							</li>	
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- Navbar Ending -->
+		  
+			<!-- Full Page Intro -->
+			<div class="view" style="background-image: url('images/cowry4.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+			<!-- Mask & flexbox options-->
+			<div class="mask rgba-gradient align-items-center" style="height:100%">
+				<!-- Content -->
+				<div class="container">
+					<!--Grid row-->
+					<div class="row mt-5 w-100 pwidthcowry">
+						<!--Grid column-->
+						<div class="col-md-3"></div>
+						<div class="d-flex-column col-md-6 mb-5 mt-md-0 mt-5 text-white text-center text-md-left pwidthcowry" style="top:100px">
+							<h1 class="d-flex flex-wrap font-weight-bold text-center" >MyCowryApp</h1>
+							<hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s" style="background-color:white">
+							<h6 class="mb-3 wow fadeInLeft text-info text-center" data-wow-delay="0.3s" style="font-size:30px">A modern payment system that guarantees safe payment in real time</h6>
+							<p><br /></p>
+						</div>
+						<div class="col-md-3"></div>
+					</div>
+					<div class="row mt-4 w-100">
+						<div class="col-md-2"></div>
+						<div class="col-md-8 d-flex flex-wrap my-4 pwidth">
+							<div class="col-md-4 mr-auto my-2">
+								<button type="button" class="btn btn-success py-2 mx-4" id="indexbtn1">
+									<a href="#" style=""><strong><i class="fas fa-hand-pointer"></i>&nbsp;Transfer Funds</strong></a>
+								</button>
+							</div>
+							<div class="col-md-4 my-2">
+								<button type="button" class="btn btn-success  py-2 mx-4" id="indexbtn2">
+									<a href="#" class="" style=""><strong><i class="fas fa-hand-pointer"></i>&nbsp;Receive Funds</strong></a>
+								</button>
+							</div>
+							<div class="col-md-4 my-2">
+								<button type="button" class="btn btn-success  py-2 mx-4" id="indexbtn3">
+									<a href="#" class="" style=""><strong><i class="fas fa-hand-pointer"></i>&nbsp;Request Funds</strong></a>
+								</button>
+							</div>	
+						</div>
+						<div class="col-md-2"></div>	
+					</div>
+				</div>
+				<!-- Content Ending-->
+			</div>
+			<!-- Mask & flexbox options-->
+			</div>
+			<!-- Full Page Intro -->
+		</header>
+		
+		<!-- Main navigation -->
+		<!--Main Layout-->
+
+		<!-- Modal for Login -->
+		<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+			<a type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true" id="modalClose">&times;</span>
+			</a>
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="loginModalLabel">Login</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true" id="modalClose">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="" id="e_msg"><b></b></div>
+						<div class="md-form mb-4">
+							<input type="email" class="form-control" placeholder="Phone number" id="email" required/>
+						</div>
+						<div class="md-form mt-4">	
+							<input type="password" class="form-control" placeholder="Password" id="password" required/>
+						</div>
+						<label><input type="checkbox" checked="checked">Remember me</label>
+						<div class="text-center"><a href="dashboard.html"><input type="submit" class="btn btn-success" id="login" value="Login"/></a></div>
+						<p></p>
+						<a href="#"><strong>Forgotten Password</strong></a>
+					</div>
+					<div class="modal-footer">
+						<div class="" id="e_msg">Don't have an account? &nbsp; <a class="text-info" href="register.html"><strong>SignUP here</strong></a></div>
+					</div>
+				</div>
+				<!-- Modal Content Ending -->
+			</div>
+		</div>
+		<!-- Login Modal Ending -->
+		
+		<!-- Modal for SignUp -->
+		<div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledbyy="signUpModalLabel" aria-hidden="true">
+			<a type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true" id="modalClose">&times;</span>
+			</a>
+			
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header text-center">
+						<h3 class="modal-title" id="signUpModalLabel">
+							<i class="fas fa-user "></i> Register:</h3>
+							<hr class="bg-white">
+						</h3>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true" id="modalClose">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+                        <div class="md-form d-flex">
+							<div>
+								<i class="fas fa-user prefix grey-text"></i>
+								<input type="text" placeholder="First name" id="fname" class="form-control mr-2">
+							</div>
+							<div>
+							<i class="fas fa-user prefix grey-text"></i>
+							<input type="text" placeholder="Last name" id="lname" class="form-control ">
+							</div>
+                        </div>
+						<div class="md-form">
+							<input type="text" placeholder="Phone number" id="phone" class="form-control">
+                        </div>
+						<div class="md-form"> 
+							<input type="text" placeholder="Account name" id="accname" class="form-control">
+                        </div>
+						<div class="md-form">
+							<input type="text" placeholder="Account number" id="accnumber" class="form-control">
+                        </div>
+						<div class="md-form">
+							<input type="text" placeholder="BVN number" id="bvn" class="form-control">
+                        </div>
+                        <div class="md-form">
+							<i class="fas fa-envelope prefix grey-text"></i>
+							<input type="email" placeholder="Email" id="email" class="form-control">
+                        </div>
+                        <div class="md-form d-flex">
+							<i class="fas fa-lock prefix grey-text"></i>
+							<input type="password" placeholder="Password" id="password" class="form-control mr-2">
+                        </div>
+						<div class="md-form">
+							<i class="fas fa-lock prefix grey-text"></i>
+							<input type="password" placeholder="Confirm password" id="cpassword" class="form-control">
+                        </div>
+                        <div class="text-center mt-2">
+							<div class="text-center"><input type="submit" class="btn btn-success" id="login" value="Login"/></div>
+							<hr class="bg-white mb-3 mt-2">
+							<div class="inline-ul text-center">
+								<a class="p-2 m-2 tw-ic">
+									<i class="fab fa-twitter"></i>
+								</a>
+								<a class="p-2 m-2 li-ic">
+									<i class="fab fa-linkedin-in"> </i>
+								</a>
+								<a class="p-2 m-2 ins-ic">
+									<i class="fas fa-instagram"> </i>
+								</a>
+								<div style="color:black">Already have an account? &nbsp; <a href="index.html"><strong>Login Here</strong></a></div>
+							</div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Footer -->
+		<footer class="py-2">
+			<div class="container">
+			<p class="m-0 text-center" style="text-color:black">Copyright &copy; Your Website 2019</p>
+			</div>
+			
+		</footer>
+		
+	
+	
+		<!-- Issues with the juery -->
+		<script type="text/javascript" src="mdb/js/jquery-3.4.1.min.js"></script>
+		<!-- Bootstrap tooltips -->
+		<script type="text/javascript" src="mdb/js/popper.min.js"></script>
+		<!-- Bootstrap core JavaScript -->
+		<script type="text/javascript" src="mdb/js/bootstrap.min.js"></script>
+		<!-- MDB core JavaScript -->
+		<script type="text/javascript" src="mdb/js/mdb.min.js"></script>
+		
+		<script type="text/javascript" src="main2.js"></script>
+
+	</body>
+</html>

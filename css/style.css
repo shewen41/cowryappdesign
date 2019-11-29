@@ -1,0 +1,194 @@
+html,
+body,
+header,
+.view {
+  height: 100%;
+  font-family: san-serif;
+}
+
+
+#sidebar-wrapper {
+  background-color: rgba(0, 122, 0, 0.7) !important;
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 30px;
+}
+
+.nav-link {
+	color: Gold;
+}
+
+#sidebar-wrapper .sidebar-header {
+  padding-top: 15px ;
+  font-size: 1.2rem;
+}
+
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 700px;
+  }
+}
+
+/* @media (max-width: 740px) {
+  .pwidthcowry {
+	margin-top: 0px;
+  }
+} */
+
+.view2 {
+	height: 1000px;
+	background-image:500px;
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 650px;
+  }
+}
+
+@media (max-width: 750px) {
+  .pwidth {
+    text-align: center;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar-collapse {
+    text-align: left;
+	margin-left: 0px;
+  }
+}
+
+
+.top-nav-collapse {
+  background-color: #3f51b5 !important;
+}
+
+
+.navbar:not(.top-nav-collapse) {
+  background: white !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: black !important;
+  }
+}
+
+.navbar-toggler-icon {
+	border:1px solid red !important;
+	border-color: yellow;
+	color: white;
+}
+
+.rgba-gradient {
+  background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(121, 85, 72, 0.5)  100%);
+  background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(121, 85, 72, 0.5)  100%)));
+  background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(121, 85, 72, 0.5) 100%);
+}
+
+.card {
+  background-color: rgba(126, 123, 215, 0.2);
+}
+
+.cardbg {
+  background-color: rgba(0, 0, 255, 0.4);
+  
+}
+
+#login {
+	padding-right: 150px;
+	padding-left: 150px;
+}
+
+
+
+#cardbtn {
+  background-color: rgba(0, 255, 0, 0.7);
+}
+
+#transCard {
+	position: relative;
+	top: 10px;
+	border-radius:25px;
+}
+
+.md-form label {
+  color: #ffffff;
+}
+
+.md-form input {
+  background-color: #f0f0f0;
+}
+
+h6 {
+  line-height: 1.7;
+}
+
+h1 {
+	font-size: 70px ! important;
+}
+
+
+#indexbtn1 a,
+#indexbtn2 a,
+#indexbtn3 a {
+	color: gold ! important;
+}
+
+
+
+button:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.2s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: 1;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+.searchbtn {
+  height: 20px;
+  bottom: 40px;
+  left: 10px;
+}
+
+#modalClose {
+	color: red;
+	font-size: 60px;
+	font-family: san-serif;
+}
+
+.modal {
+	background-color: rgba(200, 200, 200, 0.4);
+}
+
+footer {
+	background-color: #f0f0f0;
+}

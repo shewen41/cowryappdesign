@@ -1,0 +1,301 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>MyCowry App</title>
+		<link rel="stylesheet" href="font-awesome/css/all.min.css"/>
+		
+		<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+		
+		
+		
+		  <!-- Font Awesome -->
+		  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"> -->
+		  <!-- Bootstrap core CSS -->
+		<link href="mdb/css/bootstrap.min.css" rel="stylesheet">
+		  <!-- Material Design Bootstrap -->
+		<link href="mdb/css/mdb.min.css" rel="stylesheet">
+		  <!-- Your custom styles (optional) -->
+		<link rel="stylesheet" href="css/style.css">
+		  
+	</head>
+
+	<body>
+		
+		<header>
+		
+		<div class="d-flex-wrap text-center wrapper">
+			<ul class="navbar-nav" id="sidebar-wrapper">
+				<a href="#">
+					<div class="text-white sidebar-header">MycowryApp</div>
+				</a>
+				
+				<hr style="background-color:white">
+				
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="fas fa-home"></i>
+						<span>Dashboard</span>
+					</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="far fa-credit-card"></i>
+						<span>Transfer Funds</span>
+					</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="far fa-credit-card"></i>
+						<span>Recieve Funds</span>
+					</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="far fa-credit-card"></i>
+						<span>Request Funds</span>
+					</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i></i>
+						<span>Request</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- End of sidebar Wrapper -->
+		
+		  <!-- Navbar -->
+			<nav class="navbar navbar-expand-lg fixed-top scrolling-navbar py-0">
+				<div class="container">
+					<a class="navbar-brand text-success" href="#">
+						<strong>MyCowryApp</strong>
+				    </a>
+				    <button class="navbar-toggler" style="" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon fas fa-bars></i>"></span>
+				    </button>
+				    <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+						<form class="form-inline my-0 ml-5">
+							<div class="md-form my-0">
+								<input class="form-control mr-sm-2" type="text" placeholder="Search for beneficiary" aria-label="Search">
+								<i class="fas fa-search searchbtn"></i>
+							</div>
+						</form>
+					
+						<ul class="navbar-nav ml-auto py-0 my-0">
+							<li class="nav-item mr-2">
+								<button type="button" class="d-flex btn btn-success btn-sm btn-sm btn-rounded" data-toggle="modal" data-target="#signUpModal">
+									<a  class= href="register.html"><i class="fas fa-user pr-2"></i><strong>Dashborard</strong></a>
+								</button>
+							</li>
+
+							<!-- Login Modal Button -->
+							<li class="nav-item ml-2">
+								<a class="nav-link dropdown-toggle" style="color:black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Hi, Habeeb</strong></a>
+								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">Profile</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item btn btn-sm btn-danger d-flex" href="#">LogOut</a>
+								</div>
+							</li>	
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- Navbar Ending -->
+		  
+			<!-- Full Page Intro -->
+			<div class="view d-flex-wrap" style="background-color:#f0f0f0; background-repeat: no-repeat; background-size: cover; background-position: center center;">
+			<!-- Mask & flexbox options-->
+			<!-- <div class="mask rgba-gradient align-items-center" style="height:100%"> -->
+				<!-- Content -->
+				<div class="container my-5">
+					<div class="offset-2 col-md-8" style="background-color: rgba(0, 122, 0, 0.6)">
+						<div class="d-flex py-5 text-white">
+							<h3>
+								<p class="my-0">Habeeb Lawal</p>
+								<sup>1130146959</sup>
+							</h3>
+							<h3 class="ml-auto">
+								<p class="my-0">Account Balance:</p>
+								<sup>#233,000</sup>
+							</h3>
+						</div>
+					</div>
+					<div class="offset-3 col-md-6 text-center d-flex">
+						<div class="card" id="transCard">
+							<div class="card-header text-white"><strong>Recent Transactions</strong></div>
+							<div class="card-body">
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+											<tr>
+												<th>S/N</th>
+												<th>Beneficiary</th>
+												<th>Amount</th>
+												<th>Transaction Id</th>
+												<th>Date</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>Habeeb L.</td>
+												<td>#7000</td>
+												<td>234t5y5757745300</td>
+												<td>25-2-2019</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Habeeb L.</td>
+												<td>#7000</td>
+												<td>234t5y5757745300</td>
+												<td>25-2-2019</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Habeeb L.</td>
+												<td>#7000</td>
+												<td>234t5y5757745300</td>
+												<td>25-2-2019</td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>Habeeb L.</td>
+												<td>#7000</td>
+												<td>234t5y5757745300</td>
+												<td>25-2-2019</td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td>Habeeb L.</td>
+												<td>#7000</td>
+												<td>234t5y5757745300</td>
+												<td>25-2-2019</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Content Ending-->
+			</div>
+			<!-- Mask & flexbox options-->
+			<!-- Full Page Intro -->
+		</header>
+		
+		<!-- Main navigation -->
+		<!--Main Layout-->
+
+		<!-- Modal for Login -->
+
+		<!-- Login Modal Ending -->
+		
+		<!-- Modal for SignUp -->
+		<div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledbyy="signUpModalLabel" aria-hidden="true">
+			<a type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true" id="modalClose">&times;</span>
+			</a>
+			
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header text-center">
+						<h3 class="modal-title" id="signUpModalLabel">
+							<i class="fas fa-user "></i> Register:</h3>
+							<hr class="bg-white">
+						</h3>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true" id="modalClose">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+                        <div class="md-form d-flex">
+							<div>
+								<i class="fas fa-user prefix grey-text"></i>
+								<input type="text" placeholder="First name" id="fname" class="form-control mr-2">
+							</div>
+							<div>
+							<i class="fas fa-user prefix grey-text"></i>
+							<input type="text" placeholder="Last name" id="lname" class="form-control ">
+							</div>
+                        </div>
+						<div class="md-form">
+							<input type="text" placeholder="Phone number" id="phone" class="form-control">
+                        </div>
+						<div class="md-form"> 
+							<input type="text" placeholder="Account name" id="accname" class="form-control">
+                        </div>
+						<div class="md-form">
+							<input type="text" placeholder="Account number" id="accnumber" class="form-control">
+                        </div>
+						<div class="md-form">
+							<input type="text" placeholder="BVN number" id="bvn" class="form-control">
+                        </div>
+                        <div class="md-form">
+							<i class="fas fa-envelope prefix grey-text"></i>
+							<input type="email" placeholder="Email" id="email" class="form-control">
+                        </div>
+                        <div class="md-form d-flex">
+							<i class="fas fa-lock prefix grey-text"></i>
+							<input type="password" placeholder="Password" id="password" class="form-control mr-2">
+                        </div>
+						<div class="md-form">
+							<i class="fas fa-lock prefix grey-text"></i>
+							<input type="password" placeholder="Confirm password" id="cpassword" class="form-control">
+                        </div>
+                        <div class="text-center mt-2">
+							<div class="text-center"><input type="submit" class="btn btn-success" id="login" value="Login"/></div>
+							<hr class="bg-white mb-3 mt-2">
+							<div class="inline-ul text-center">
+								<a class="p-2 m-2 tw-ic">
+									<i class="fab fa-twitter"></i>
+								</a>
+								<a class="p-2 m-2 li-ic">
+									<i class="fab fa-linkedin-in"> </i>
+								</a>
+								<a class="p-2 m-2 ins-ic">
+									<i class="fas fa-instagram"> </i>
+								</a>
+								<div style="color:black">Already have an account? &nbsp; <a href="index.html"><strong>Login Here</strong></a></div>
+							</div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Footer -->
+		<footer class="py-2">
+			<div class="container">
+			<p class="m-0 text-center" style="text-color:black">Copyright &copy; Your Website 2019</p>
+			</div>
+			
+		</footer>
+		
+	
+	
+		<!-- Issues with the juery -->
+		<script type="text/javascript" src="mdb/js/jquery-3.4.1.min.js"></script>
+		<!-- Bootstrap tooltips -->
+		<script type="text/javascript" src="mdb/js/popper.min.js"></script>
+		<!-- Bootstrap core JavaScript -->
+		<script type="text/javascript" src="mdb/js/bootstrap.min.js"></script>
+		<!-- MDB core JavaScript -->
+		<script type="text/javascript" src="mdb/js/mdb.min.js"></script>
+		
+		<script type="text/javascript" src="main2.js"></script>
+
+	</body>
+</html>
